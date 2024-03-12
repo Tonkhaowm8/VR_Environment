@@ -5,7 +5,7 @@ using UnityEngine;
 public class randomAnimation : MonoBehaviour
 {
     // Reference to the animator component
-    Animator anim;
+    public Animator anim;
     // Reference to the audio source component
     public AudioSource audioSource;
     // Audio clip to play
@@ -15,7 +15,7 @@ public class randomAnimation : MonoBehaviour
     void Start()
     {
         // Get the animator component attached to the same GameObject
-        anim = GetComponent<Animator>();
+        //anim = GetComponent<Animator>();
 
         // Generate a random number between 1 and 3
         int randomAnimationNumber = Random.Range(1, 3); // The second parameter is exclusive
@@ -30,6 +30,8 @@ public class randomAnimation : MonoBehaviour
         // Check if the collider is tagged as "Player"
         if (other.CompareTag("Player"))
         {
+            Debug.Log("Hello");
+
             int randomAnimationNumber = 4;
 
             // Set the random number to the integer parameter "randomIdle"
