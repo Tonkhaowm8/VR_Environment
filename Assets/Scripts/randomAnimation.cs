@@ -45,17 +45,4 @@ public class randomAnimation : MonoBehaviour
             }
         }
     }
-
-    // OnTriggerExit is called when the Collider other exits the trigger
-    private void OnTriggerExit(Collider other)
-    {
-        // Check if the collider is tagged as "Player"
-        if (other.CompareTag("Player"))
-        {
-            int randomAnimationNumber = 1;
-
-            // Set the random number to the integer parameter "randomIdle"
-            anim.SetInteger("randomIdle", randomAnimationNumber);
-        }
-    }
 }

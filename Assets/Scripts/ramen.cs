@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ramen : MonoBehaviour
+public class Ramen : MonoBehaviour
 {
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     // Called when the GameObject collides with another GameObject

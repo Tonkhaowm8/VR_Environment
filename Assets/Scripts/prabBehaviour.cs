@@ -5,7 +5,9 @@ using UnityEngine;
 public class prabBehaviour : MonoBehaviour
 {
     public Animator animator;
+    public AudioSource audioSource;
     public float animationDuration = 1.0f; // Adjust the duration of your animation here
+    private bool isDancing = false; // Flag to track if Prab is currently dancing
 
     // Start is called before the first frame update
     void Start()
@@ -17,25 +19,59 @@ public class prabBehaviour : MonoBehaviour
     {
         while (true)
         {
-            // Generate a random integer from 1 to 3
-            int randomIdle = Random.Range(1, 4);
+            if (!isDancing) // Check if not dancing
+            {
+                // Generate a random integer from 1 to 3 (changed to 3 since we want inclusive range)
+                int randomIdle = Random.Range(1, 4);
 
-            // Set the "randomIdle" parameter in the Animator
-            animator.SetInteger("randomIdle", randomIdle);
+                // Set the "randomIdle" parameter in the Animator
+                animator.SetInteger("randomIdle", randomIdle);
+            }
 
             // Wait for the animation duration
             yield return new WaitForSeconds(animationDuration);
         }
     }
 
-    // Called when another Collider enters the trigger
-    void OnTriggerEnter(Collider other)
+    // Called when the GameObject collides with another GameObject
+    void OnCollisionEnter(Collision collision)
     {
-        // Check if the other collider has the tag "ramen"
-        if (other.CompareTag("ramen"))
+        // Check if the collided object has a tag "ramen"
+        if (collision.gameObject.CompareTag("ramen"))
         {
-            // Set randomIdle to 4
-            animator.SetInteger("randomIdle", 4);
+            // Play audioClip
+            if (audioSource != null)
+            {
+                audioSource.Play();
+            }
+
+            // Deactivate the ramen GameObject
+            collision.gameObject.SetActive(false);
+
+            // Start dancing animation
+            StartCoroutine(DanceAnimation());
         }
     }
+
+    IEnumerator DanceAnimation()
+    {
+        // Set dancing flag to true
+        isDancing = true;
+
+        // Stop the current animation
+        animator.SetInteger("randomIdle", 0);
+
+        // Start the dance animation
+        animator.SetBool("dance", true);
+
+        // Wait for the dance animation to finish
+        yield return new WaitForSeconds(animationDuration); // Adjust duration if needed
+
+        // Stop the dance animation
+        animator.SetBool("dance", false);
+
+        // Set dancing flag to false
+        isDancing = false;
+    }
 }
+
