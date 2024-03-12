@@ -1,0 +1,11 @@
+Model Information:
+* title:	Incendiary grenade
+* source:	https://sketchfab.com/3d-models/incendiary-grenade-dec7bc413f12429c99f81cf4e6890ac7
+* author:	jones (https://sketchfab.com/JonesMetrac)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Incendiary grenade" (https://sketchfab.com/3d-models/incendiary-grenade-dec7bc413f12429c99f81cf4e6890ac7) by jones (https://sketchfab.com/JonesMetrac) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

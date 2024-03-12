@@ -1,0 +1,11 @@
+Model Information:
+* title:	Steam-powered car
+* source:	https://sketchfab.com/3d-models/steam-powered-car-34cc9a42801c4e1c82920a1cf18048ad
+* author:	Chip Buchanan (https://sketchfab.com/ChipBuchanan)
+
+Model License:
+* license type:	CC-BY-SA-4.0 (http://creativecommons.org/licenses/by-sa/4.0/)
+* requirements:	Author must be credited. Modified versions must have the same license. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Steam-powered car" (https://sketchfab.com/3d-models/steam-powered-car-34cc9a42801c4e1c82920a1cf18048ad) by Chip Buchanan (https://sketchfab.com/ChipBuchanan) licensed under CC-BY-SA-4.0 (http://creativecommons.org/licenses/by-sa/4.0/)

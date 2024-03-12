@@ -1,0 +1,11 @@
+Model Information:
+* title:	beer thai pack
+* source:	https://sketchfab.com/3d-models/beer-thai-pack-3d1cfe7961d1486bbe245c927d9804bd
+* author:	Son.Sinpivong (https://sketchfab.com/Son.Sinpivong)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "beer thai pack" (https://sketchfab.com/3d-models/beer-thai-pack-3d1cfe7961d1486bbe245c927d9804bd) by Son.Sinpivong (https://sketchfab.com/Son.Sinpivong) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

@@ -1,0 +1,11 @@
+Model Information:
+* title:	Star Wars: Tatooine Build Prop.
+* source:	https://sketchfab.com/3d-models/star-wars-tatooine-build-prop-8d2cf8dc844a4368af88998da42286c3
+* author:	HammerWorks (https://sketchfab.com/HammerWorks)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Star Wars: Tatooine Build Prop." (https://sketchfab.com/3d-models/star-wars-tatooine-build-prop-8d2cf8dc844a4368af88998da42286c3) by HammerWorks (https://sketchfab.com/HammerWorks) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
