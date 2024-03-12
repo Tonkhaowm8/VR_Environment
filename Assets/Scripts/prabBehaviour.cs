@@ -22,7 +22,7 @@ public class prabBehaviour : MonoBehaviour
             if (!isDancing) // Check if not dancing
             {
                 // Generate a random integer from 1 to 3 (changed to 3 since we want inclusive range)
-                int randomIdle = Random.Range(1, 4);
+                int randomIdle = 2;
 
                 // Set the "randomIdle" parameter in the Animator
                 animator.SetInteger("randomIdle", randomIdle);
@@ -50,6 +50,13 @@ public class prabBehaviour : MonoBehaviour
 
             // Start dancing animation
             StartCoroutine(DanceAnimation());
+        }
+
+        // Check if the collided object is the main camera
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            // Set randomIdle to 1
+            animator.SetInteger("randomIdle", 1);
         }
     }
 

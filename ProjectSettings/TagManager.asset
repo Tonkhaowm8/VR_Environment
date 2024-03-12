@@ -8,6 +8,8 @@ TagManager:
   - floor
   - ramen
   - prab
+  - FxTemporaire
+  - flashlight
   layers:
   - Default
   - TransparentFX

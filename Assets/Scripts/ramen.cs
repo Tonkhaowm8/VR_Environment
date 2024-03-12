@@ -28,9 +28,13 @@ public class Ramen : MonoBehaviour
 
             // Set the GameObject's active state to false
             gameObject.SetActive(false);
-
-            // Reset the position of the GameObject to its original position
-            transform.position = originalPosition;
         }
+    }
+
+    // Called when the GameObject is disabled
+    void OnDisable()
+    {
+        // Reset the position of the GameObject to its original position
+        transform.position = originalPosition;
     }
 }
