@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class Ramen : MonoBehaviour
 {
-    // Update is called once per frame
-    void Update()
-    {
+    public AudioSource audioSource; // Reference to the AudioSource component
+    private Vector3 originalPosition; // Original position of the GameObject
 
+    void Start()
+    {
+        // Store the original position when the GameObject is initialized
+        originalPosition = transform.position;
     }
 
     // Called when the GameObject collides with another GameObject
@@ -16,8 +19,18 @@ public class Ramen : MonoBehaviour
         // Check if the collided object has a tag "floor"
         if (collision.gameObject.CompareTag("floor"))
         {
+            // Check if the audio source is not null and if it is not already playing
+            if (audioSource != null && !audioSource.isPlaying)
+            {
+                // Play the audio source
+                audioSource.Play();
+            }
+
             // Set the GameObject's active state to false
             gameObject.SetActive(false);
+
+            // Reset the position of the GameObject to its original position
+            transform.position = originalPosition;
         }
     }
 }
