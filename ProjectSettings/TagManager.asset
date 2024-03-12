@@ -6,6 +6,7 @@ TagManager:
   tags:
   - CinemachineTarget
   - floor
+  - ramen
   layers:
   - Default
   - TransparentFX
